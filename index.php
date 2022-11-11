@@ -1,12 +1,12 @@
 
 /**
- * Created on : 15September2016
+ * Created on : Sep 15 2016
  * Created By : LuVidal
  * Created for : Collab Issue no #686
  * Edited On : 
  * Edited By : 
  * Edited for : 
- * arr2tbl(array) recives recordset and outputs the HTML table for debbuging purposes (instead of var_dump).
+ * arr2tbl(array) receives PDO associative array and outputs the HTML table for debbuging purposes (instead of var_dump).
  **/
 
 function arr2tbl($array) 
@@ -15,7 +15,8 @@ function arr2tbl($array)
     $html .= '<tr>';
     foreach($array[0] as $key=>$value) $html .= '<th>' . $key . '</th>';
     $html .= '</tr>';
-    foreach( $array as $key=>$value){
+    foreach( $array as $key=>$value)
+    {
         $html .= '<tr>';
         foreach($value as $key2=>$value2) $html .= '<td>' . $value2 . '</td>';
         $html .= '</tr>';
