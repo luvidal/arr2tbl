@@ -1,2 +1,2 @@
 # arr2tbl
- A simple PHP function to display a 2-dim array
+ A light PHP function I use to display a database recordsets as a table
